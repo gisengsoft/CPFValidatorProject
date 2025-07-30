@@ -1,5 +1,4 @@
 # CPFValidatorProject
-![Deploy Status](https://github.com/gisengsoft/CPFValidatorProject/actions/workflows/deploy.yml/badge.svg)
 
 Projeto de validação de CPF com Azure Functions (HTTP Trigger) em Python.
 
