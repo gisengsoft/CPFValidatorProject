@@ -1,4 +1,7 @@
+![Deploy Status](https://github.com/gisengsoft/CPFValidatorProject/actions/workflows/deploy.yml/badge.svg)
+
 # CPFValidatorProject
+
 
 Projeto de validação de CPF com Azure Functions (HTTP Trigger) em Python.
 
@@ -65,7 +68,7 @@ func azure functionapp publish NOME_DA_SUA_FUNCTION
 
 ## 🚀 Deploy com 1 Clique (Azure)
 
-[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.FunctionApp)
+[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.FunctionApp-ARMTemplate/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fgisengsoft%2FCPFValidatorProject%2Fmain%2Fazuredeploy.json)
 
 ---
 

@@ -1,0 +1,37 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "functionAppName": {
+      "type": "string",
+      "defaultValue": "cpfvalidator-autoapp",
+      "metadata": {
+        "description": "Nome da Function App"
+      }
+    },
+    "location": {
+      "type": "string",
+      "defaultValue": "Brazil South",
+      "metadata": {
+        "description": "Região do Azure"
+      }
+    }
+  },
+  "resources": [
+    {
+      "type": "Microsoft.Web/sites",
+      "apiVersion": "2022-03-01",
+      "name": "[parameters('functionAppName')]",
+      "location": "[parameters('location')]",
+      "kind": "functionapp,linux",
+      "properties": {
+        "siteConfig": {
+          "linuxFxVersion": "Python|3.12"
+        },
+        "httpsOnly": true,
+        "clientAffinityEnabled": false,
+        "serverFarmId": "[resourceId('Microsoft.Web/serverfarms', 'DefaultPlan')]"
+      }
+    }
+  ]
+}
